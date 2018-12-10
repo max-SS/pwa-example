@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-content fxLayout="column" fxLayoutGap="8px">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+                <mat-icon class="mat-hint">directions_car</mat-icon>
+                <strong [innerHtml]="new_divice.attributes.name"></strong>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+                <span [innerHtml]="new_divice.attributes.battery + '%'"></span>                
+                <mat-icon class="mat-hint" style="transform: rotate(90deg);">battery_full</mat-icon>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <mat-hint [innerHtml]="new_divice.attributes.description"></mat-hint>
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+                <mat-hint
+                    [innerHtml]="new_divice.attributes.velocity + 'Km/s'"
+                ></mat-hint>
+                <mat-icon class="mat-hint">equalizer</mat-icon>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
