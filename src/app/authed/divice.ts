@@ -1,7 +1,7 @@
 export class Attributes {
     name = '';
     battery = 0;
-    status = '';
+    status: 'loading' | 'discharged' | 'walking' | 'waiting' = 'loading';
     description = '';
     velocity = 0;
 

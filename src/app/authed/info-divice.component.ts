@@ -15,19 +15,21 @@ export class InfoDiviceComponent implements OnInit {
         this.divice = new Divice('1').setAttributes({
             name: 'Uber1',
             battery: 50,
-            status: 'charged',
+            status: 'loading',
             description: 'Velocidad aproximada',
             velocity: 45
         });
         console.log('Divice?', this.divice);
 
-        this.new_divice = diviceService.new('1').setAttributes({
-            name: 'Uber1',
-            battery: 100,
-            status: 'charged',
-            description: 'Velocidad aproximada',
-            velocity: 45
-        });
+        this.new_divice = diviceService
+          .new('1')
+          .setAttributes({
+              name: 'Uber1',
+              battery: 100,
+              status: 'loading',
+              description: 'Velocidad aproximada',
+              velocity: 45
+          });
     }
 
     public ngOnInit(): void {
