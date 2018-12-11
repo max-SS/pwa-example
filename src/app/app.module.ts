@@ -10,10 +10,12 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InfoDiviceComponent } from './authed/info-divice.component';
 import { DivicesService } from './authed/divice.service';
+import { BottomNavComponent } from './authed/bottom-nav/bottom-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BottomNavComponent,
     InfoDiviceComponent
   ],
   imports: [
