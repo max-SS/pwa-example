@@ -1,0 +1,26 @@
+<div class="bottom-nav-container mat-elevation-z6">
+    <div class="top-pull-button" fxLayout="row" fxLayoutAlign="center center"
+        (click)="pullPanel()">
+        <i class="icon-pull"></i>
+    </div>
+    
+    <div class="bottom-nav-content" fxLayout="column" fxLayoutGap="8px">
+        <tp-info-divice></tp-info-divice>
+
+        <h5 class="mat-hint" style="font-weight: 500">Mis otros vehículos</h5>
+        <tp-info-divice></tp-info-divice>
+        <tp-info-divice></tp-info-divice>
+    </div>
+
+    <div class="bttom-nav-footer">
+        <mat-toolbar style="background-color: inherit">
+            <div fxFlex class="search" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+                <mat-icon class="mat-hint">search</mat-icon>
+                <input type="text" fxFlex>
+            </div>
+            <button mat-icon-button>
+                <mat-icon class="mat-hint">account_circle</mat-icon>
+            </button>
+        </mat-toolbar>
+    </div>
+</div>

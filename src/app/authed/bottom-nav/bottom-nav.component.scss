@@ -1,0 +1,46 @@
+.bottom-nav-container {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    // background-color: rgba(238, 238, 238, 1);
+    background-color: rgba(189, 189, 189, 1);
+}
+
+.bottom-nav-content {
+    padding: 0 16px 16px 16px;
+}
+
+.top-pull-button {
+    height: 26px;
+    max-height: 26px;
+    min-height: 26px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.icon-pull {
+    width: 50px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.search {
+    padding: 4px 8px;
+    background-color: rgba(158, 158, 158, 1);
+    border-radius: 50px;
+}
+
+input {
+    border: none;
+    outline: 0 none;
+    background-color: inherit;
+}
